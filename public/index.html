@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel Data</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <h1 style="text-align: center; font-size: 25px">Excel Data File</h1>
+
+    <!-- Add an enctype attribute to the form for file uploads -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <div
+        style="
+          padding: 10px;
+          margin: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <input
+          type="file"
+          id="file"
+          name="file"
+          accept=".xlsx,.xls"
+          placeholder="Choose file"
+        />
+      </div>
+      <button type="submit" style="padding: 10px; margin: 10px">Submit</button>
+    </form>
+  </body>
+</html>
